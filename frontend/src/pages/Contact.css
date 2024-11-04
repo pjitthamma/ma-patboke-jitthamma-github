@@ -1,0 +1,165 @@
+.contact,
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.hero {
+  align-self: stretch;
+  align-items: flex-end;
+  padding: 0 0 92px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.contact {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  align-items: flex-start;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1250px) {
+  .hero {
+    padding-bottom: var(--padding-41xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .hero {
+    padding-bottom: 39px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .hero {
+    padding-bottom: var(--padding-6xl);
+    box-sizing: border-box;
+  }
+}
+
+.contactP {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.heroP {
+  padding: 40px;
+  margin-left: 66px;
+}
+
+.heroP h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.heroP h2 {
+  font-size: 26px;
+  margin-top: 20px;
+  color: #444;
+}
+
+.heroP h3 {
+  font-size: 22px;
+  margin-top: 20px;
+  color: #555;
+  font-weight: bold;
+}
+
+.heroP p {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.heroP ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.heroP ul li {
+  margin-bottom: 10px;
+}
+
+.heroP div {
+  margin-bottom: 20px;
+}
+
+.heroP .policy-section {
+  margin-bottom: 30px;
+}
+
+.policy-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.policy-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.policy-content p,
+.policy-content ul {
+  margin-bottom: 3px;
+}
+
+.policy-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.policy-footer {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .heroP {
+    padding: 20px;
+  }
+
+  .heroP h1 {
+    font-size: 24px;
+  }
+
+  .heroP h2 {
+    font-size: 20px;
+  }
+
+  .heroP h3 {
+    font-size: 18px;
+  }
+
+  .heroP p {
+    font-size: 12px;
+  }
+}
+
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.hero-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.centered-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}

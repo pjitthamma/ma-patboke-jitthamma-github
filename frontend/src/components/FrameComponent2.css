@@ -1,0 +1,48 @@
+.street-address {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 118px;
+  z-index: 1;
+}
+.address-input-fields-child {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white1);
+  border: 1px solid var(--color-darkgray-100);
+  box-sizing: border-box;
+  max-width: 100%;
+  z-index: 1;
+}
+.address-input-fields {
+  flex: 1;
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-12xs);
+  box-sizing: border-box;
+}
+.address-input-fields,
+.frame-wrapper2,
+.street-address-parent {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.street-address-parent {
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+}
+.frame-wrapper2 {
+  height: 121px;
+  flex-direction: column;
+  padding: 0 var(--padding-8xs) 0 var(--padding-12xs);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}

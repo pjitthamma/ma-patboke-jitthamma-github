@@ -1,0 +1,108 @@
+.frame-child {
+  height: 1829px;
+  width: 1440px;
+  position: relative;
+  background-color: var(--color-white1);
+  display: none;
+  max-width: 100%;
+}
+.content,
+.rectangle-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.rectangle-parent {
+  width: 1440px;
+  background-color: var(--color-white1);
+  justify-content: flex-start;
+  padding: var(--padding-44xl) 98px var(--padding-33xl) var(--padding-81xl);
+  gap: var(--gap-7xl);
+}
+.content {
+  width: 1840px;
+  justify-content: center;
+  padding: 0 var(--padding-xl) var(--padding-33xl);
+}
+.feature,
+.feature-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+}
+.feature {
+  width: 1334px;
+  overflow-x: auto;
+  flex-direction: row;
+  gap: var(--gap-xl);
+}
+.feature-list {
+  align-self: stretch;
+  background-color: var(--color-linen-100);
+  flex-direction: column;
+  padding: var(--padding-73xl-5) var(--padding-xl);
+  box-sizing: border-box;
+  min-height: 255px;
+}
+.checkout,
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.features {
+  align-self: stretch;
+  max-width: 100%;
+}
+.checkout {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white1);
+  overflow: hidden;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1250px) {
+  .rectangle-parent {
+    flex-wrap: wrap;
+    padding: var(--padding-22xl) var(--padding-30xl) var(--padding-15xl)
+      var(--padding-31xl);
+    box-sizing: border-box;
+  }
+  .content {
+    padding-bottom: var(--padding-15xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .rectangle-parent {
+    padding-top: var(--padding-8xl);
+  }
+  .content,
+  .rectangle-parent {
+    padding-bottom: var(--padding-3xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .rectangle-parent {
+    padding-left: var(--padding-6xl);
+    padding-right: var(--padding-5xl);
+    box-sizing: border-box;
+  }
+  .content {
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .rectangle-parent {
+    padding-top: var(--padding-xl);
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

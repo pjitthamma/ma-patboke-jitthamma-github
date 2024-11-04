@@ -1,0 +1,116 @@
+version: "3.1"
+
+entities:
+  - order_id
+
+intents:
+  - ask_order_status
+  - provide_order_id
+  - greet
+  - thankyou
+  - affirm
+  - deny
+  - out_of_scope
+  - ask_new_releases
+  - ask_payment_options
+  - request_refund
+  - start_session_b
+  - trigger_visual_guide
+  - ask_miscellaneous
+  - ask_customer_service
+  - manage_account
+  - ask_discounts
+  - empty_message
+
+slots:
+  order_id:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_text 
+
+  retry_count:
+    type: float
+    initial_value: 0
+    influence_conversation: false
+    mappings:
+      - type: custom
+
+  user_session_type:
+    type: text
+    initial_value: "A"  # Default to User A
+    influence_conversation: false
+    mappings:
+      - type: custom   
+
+actions:
+  - action_check_order_status
+  - action_get_new_release_products
+  - action_list_payment_options
+  - action_request_refund
+  - action_set_session_user_type
+  - action_trigger_ui_manipulation
+  - action_do_nothing
+
+responses:
+  utter_welcome_message_b:
+    - text: "Welcome to Furniro. How may we assist you today?"
+
+  utter_visual_guide_check_order:
+    - text: "For automated visual guidance, please press the button below."
+      buttons:
+        - title: "Check Order Visual Guide"
+          payload: ""
+
+  utter_visual_guide_new_release:
+    - text: "For automated visual guidance, please press the button below."
+      buttons:
+        - title: "New Release Visual Guide"
+          payload: "" 
+
+  utter_visual_guide_payment_option:
+    - text: "For automated visual guidance, please press the button below."
+      buttons:
+        - title: "Payment Option Visual Guide" 
+          payload: ""
+
+  utter_visual_guide_request_refund:
+    - text: "For automated visual guidance, please press the button below."
+      buttons:
+        - title: "Request Refund Visual Guide"  
+          payload: ""                   
+
+  utter_ask_order_id:
+    - text: "Kindly provide your order ID."
+
+  utter_greet:
+    - text: "Hello! How may we assist you today?"
+
+  utter_you_are_welcome:
+    - text: "You're welcome!"
+    - text: "Happy to help!"
+    - text: "Anytime!"
+    - text: "Glad we could assist!" 
+
+  utter_anything_else:
+    - text: "Is there anything else we can assist you with?"
+
+  utter_ask_what_else:
+    - text: "Certainly! Is there anything else you would like to ask?"
+
+  utter_goodbye:
+    - text: "Excellent! We wish you a great day!"  
+
+  utter_out_of_scope:
+  - text: "We apologize, but we are unable to process that request. Please try a different question."
+
+  utter_payment_info:
+  - text: "You can view available payment options on the Checkout page."
+
+  utter_ask_refund_order_id:
+  - text: "Please provide the order ID for the item you would like to refund."
+
+  utter_development_response:
+    - text: "We apologize, our system is still in development to support your request. We appreciate your feedback and will use it to enhance our services in the future."
+
+

@@ -1,0 +1,43 @@
+.country-region {
+  position: relative;
+  font-weight: 500;
+  z-index: 1;
+}
+.frame-dropdownbutton {
+  display: grid;
+  align-self: stretch;
+  max-width: 100%;
+}
+
+.btn-group-vertical>.btn, .btn-group>.btn{
+  background-color: #b88e2f;
+  border-color: #b88e2f;
+}
+.country-region-parent,
+.name-input-fields {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.country-region-parent {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-3xl);
+}
+.name-input-fields {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-8xs) 0 var(--padding-12xs);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+
+.dropdown-menu {
+  width: 454px !important;
+  max-height: 200px;
+  overflow-y: auto;
+}

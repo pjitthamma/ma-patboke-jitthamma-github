@@ -1,0 +1,1010 @@
+version: "3.1"
+
+nlu:
+- intent: start_session_b
+  examples: |
+    - Starting session by User B
+    - session started by User B
+    - Hello, User B is starting the session
+    - Initiating session as User B
+    - User B session start
+    - Hello, this is User B starting the session
+
+- intent: ask_order_status
+  examples: |
+    - What's the current status of my delivery?
+    - Can I have a status update on my order?
+    - Could you track my delivery status?
+    - How's the tracking status for my order?
+    - What’s the latest delivery update for my order?
+    - Can I check the delivery tracking of my order?
+    - Is my order's delivery status available?
+    - Do you have the tracking info for my delivery?
+    - How do I track my order's delivery?
+    - Can you provide the latest order status?
+    - I need to check my order's tracking details.
+    - What's the latest on my order's status?
+    - Can I see the delivery progress for my order?
+    - I want to know the tracking details for my order.
+    - Is there an update on my order's delivery status?
+    - Can I see the status of my tracking number?
+    - Has my order's delivery status been updated?
+    - Can you provide the current delivery tracking status?
+    - I’d like an update on the tracking for my order.
+    - What’s the delivery status for my package?
+    - Any new info on my order status?
+    - Where is my order in the delivery process?
+    - Can you provide tracking details for my order?
+    - Is my delivery status showing any updates?
+    - What’s my order’s status in terms of delivery?
+    - Is my tracking status available yet?
+    - Do you have an update on my order's tracking status?
+    - I want to know if the delivery status has changed.
+    - Any updates on the tracking status of my delivery?
+    - Can you check the delivery tracking status for me?
+    - I’d like the status for my delivery tracking number.
+    - Any recent changes in the delivery status of my order?
+    - Has my order reached the next tracking status?
+    - What’s my order’s tracking status?
+    - Is there a delivery tracking update for my order?
+    - I need details on the current delivery status of my order.
+    - Is the tracking status for my order available?
+    - Could you give me an update on my order's tracking status?
+    - I’d like to view my order’s current tracking status.
+    - Order status?
+    - Status update?
+    - Track order
+    - Where’s my order?
+    - Delivery status?
+    - Track my order
+    - Order tracking?
+    - Is my order shipped?
+    - Any update?
+    - Where’s my package?
+    - Shipped yet?
+    - Status of my order?
+    - Is my order coming?
+    - Where is it?
+    - Delivery update?
+    - Check order status
+    - Any tracking info?
+    - Track my delivery
+    - Update on my order?
+    - Where is my item?
+    - Is it on the way?
+    - What’s my order status?
+    - When’s my order arriving?
+    - Tracking update?
+    - Where is it now?
+    - Is it dispatched?
+    - Is my order processed?
+    - Where’s my shipment?
+    - Order progress?
+    - Status of delivery?
+    - Order update?
+    - Is my package out for delivery?
+    - Has my order left?
+    - Delivery progress?
+    - What’s going on with my order?
+    
+- intent: provide_order_id
+  examples: |
+    - [111222](order_id)
+    - My order ID is [333444](order_id)
+    - Order ID: [555888](order_id)
+    - Please look up [123321](order_id)
+    - Can you check order [987654](order_id)?
+    - Here’s my order ID [765432](order_id)
+    - [432109](order_id)
+    - The order number is [222333](order_id)
+    - [678910](order_id)
+    - I need info for order [890123](order_id)
+    - Check status for [654321](order_id)
+    - Refund for [111000](order_id)
+    - My order number is [234567](order_id)
+    - [123456](order_id)
+    - I have an order with ID [345678](order_id)
+    - Process refund for order [876543](order_id)
+    - This is my order ID: [246801](order_id)
+    - Here’s the order ID [789123](order_id)
+    - Check [908070](order_id) for me
+    - Refund request for order [506070](order_id)
+    - Status of order [109876](order_id)
+    - [678234](order_id)
+    - My return order ID is [321098](order_id)
+    - [707070](order_id)
+    - The return order number is [676767](order_id)
+    - Order reference: [789012](order_id)
+    - Please check order [101010](order_id)
+    - [888999](order_id)
+    - Status for ID [555777](order_id)
+    - My recent order ID [999888](order_id)
+    - [432198](order_id)
+    - Here’s the ID for my order: [909090](order_id)
+    - Track order ID [777888](order_id)
+    - The order ID is [876543](order_id)
+    - [212121](order_id)
+    - I need details for [333555](order_id)
+    - Order ID to refund: [444555](order_id)
+    - Return [121212](order_id)
+    - The ID for my order is [333222](order_id)
+    - [000999](order_id)
+    - Lookup for order [567890](order_id)
+    - My ID: [321321](order_id)
+    - Refund for order ID [543210](order_id)
+    - Order to process: [202020](order_id)
+    - [456789](order_id)
+    - Can I get info on order [234234](order_id)?
+    - Here’s my ID: [898989](order_id)
+    - Track [222111](order_id)
+    - Refund ID [909091](order_id)
+    - [111999](order_id)
+    - The order to check is [678678](order_id)
+    - Please review ID [112233](order_id)
+    - Look up [667788](order_id)
+    - My reference is [999555](order_id)
+    - Check order [112211](order_id)
+    - I need a refund on [556677](order_id)
+    - My latest order ID: [998877](order_id)
+    - Order ID [223344](order_id)
+    - [554433](order_id)
+    - Status of [667799](order_id)
+    - My order: [345543](order_id)
+    - Look at [221122](order_id)
+    - [667788](order_id)
+    - Verify [887766](order_id)
+    - [110011](order_id)
+    - Refund for order ID [990099](order_id)
+    - This is the order ID [332211](order_id)
+    - Track [778899](order_id)
+    - Info for [441122](order_id)
+    - Update me on [909009](order_id)
+
+- intent: greet
+  examples: |
+    - Hey there, bot!
+    - Howdy!
+    - Hello, how are you?
+    - Hi bot
+    - Hey, good to see you
+    - What's up, assistant?
+    - Yo!
+    - Hi, nice to meet you
+    - Hello again
+    - Hi there, assistant
+    - Hey, what's new?
+    - Hello, anyone there?
+    - Hi, anyone online?
+    - Hey, you there?
+    - Good to see you
+    - Hello friend
+    - How’s it going?
+    - Hi, are you available?
+    - Hello, my friend
+    - Good day
+    - Hello there, bot!
+    - Hey, how’s it going?
+    - Greetings, chatbot
+    - Hi, long time no see
+    - Hello, virtual assistant
+    - Hey, good to be here
+    - Hello, how’s your day?
+    - Hi, are you there?
+    - Greetings to you
+    - Hello, can you help me?
+    - Hi hi!
+    - Morning!
+    - Hi, hope you’re well
+    - Hello there, assistant
+    - Hey, ready to chat?
+    - Hi, are you online?
+    - What's happening?
+    - Hello, how do you do?
+    - Hi, just saying hi
+    - Hello there, how’s it going?
+    - Hey, how’s everything?
+    - Hey, how’s your day going?
+    - How’s life?
+    - Hiya!
+    - Hey, buddy!
+    - Hi, my friend
+    - Hey there, good to see you
+    - Hello there, what’s up?
+    - Hola!
+    - Hey hey!
+    - Good to be here
+    - What's good?
+    - Hello there, can you assist me?
+    - Hey, anyone here?
+    - Howdy, chatbot!
+    - Greetings, my assistant
+    - Hi, it’s nice to chat
+    - Good evening, bot
+    - Hey, I’m back!
+    - Good day to you
+    - Hi there, are you awake?
+    - Hello, just stopping by
+    - What's going on?
+    - Hey, let's chat
+    - How’s everything going?
+    - Hi, is this a good time?
+    - Hi, how's it hanging?
+    - Hello, nice to be here
+    - What's up, chatbot?
+    - Hi there, nice to see you
+    - Good evening, assistant
+    - Hi, glad to be here
+    - Hey, what’s going on?
+    - Hello, just wanted to say hi
+
+- intent: thankyou
+  examples: |
+    - Thanks a bunch
+    - Really appreciate it
+    - I owe you one
+    - Can’t thank you enough
+    - You’re the best
+    - Thank you very much
+    - Huge thanks
+    - I’m so grateful
+    - You saved my day
+    - Big thanks
+    - Thank you for your assistance
+    - Thank you for helping me out
+    - I’m thankful for your help
+    - Thank you, I appreciate it
+    - Thank you kindly
+    - Couldn’t have done it without you
+    - You’ve been a big help
+    - I really value your help
+    - I appreciate it so much
+    - I’m grateful for your assistance
+    - That was a big help, thank you
+    - Thanks a million
+    - You’ve been incredibly helpful
+    - Thank you for everything
+    - Cheers for the help
+    - Thank you for your support
+    - Much obliged
+    - Thank you, that was helpful
+    - Appreciate you, bot
+    - Thanks for the support
+    - Many thanks for the assistance
+    - Thanks, you’re awesome
+    - Thanks for lending a hand
+    - I appreciate your guidance
+    - Thanks for your patience
+    - I’m super grateful
+    - You’ve been amazing
+    - Really thankful for your help
+    - Thanks, I couldn’t do it without you
+    - I owe you big time
+    - Thank you, that was perfect
+    - You’re a big help, thanks
+    - Thank you for your quick response
+    - Thanks a ton
+    - Forever grateful
+    - You’re wonderful, thank you
+    - Thanks for being there
+    - Thank you for understanding
+    - Appreciate your quick help
+    - You’ve been a great help
+    - Just wanted to say thanks
+    - Thank you, that was exactly what I needed
+    - So thankful
+    - You’re a gem, thanks
+    - Thanks for the assist
+    - You’re very kind, thanks
+    - Couldn’t ask for better help, thank you
+    - Thanks for everything you do
+    - I’m really thankful for you
+    - Appreciate the time you took
+    - You’ve been super helpful, thanks
+    - I feel very grateful
+    - You really helped me out, thank you
+    - Thanks, that means a lot
+    - You’re incredible, thanks
+    - Thank you for sorting that out
+    - Appreciate your assistance
+    - I’m really grateful for your help
+    - Thanks for the clarification
+    - Thank you for your dedication
+    - Big shoutout to you, thanks
+    - You’re a real star, thank you
+    - Thanks for everything, bot
+    - Thank you, it was a pleasure
+    - You’ve made my day, thank you      
+
+- intent: affirm
+  examples: |
+    - Yes, for sure
+    - Absolutely right
+    - Certainly
+    - Yep, that’s correct
+    - Right on
+    - You got it
+    - Agreed
+    - That works
+    - I’m in
+    - Yes, exactly
+    - You’re spot on
+    - Indeed, that’s correct
+    - Yes, definitely
+    - Perfectly right
+    - It’s a yes from me
+    - No doubt
+    - True that
+    - Yes, of course
+    - All good
+    - You bet
+    - That’s it
+    - I’m with you
+    - Right, exactly
+    - You’re right
+    - Certainly so
+    - Can’t disagree
+    - Right, that’s correct
+    - Yes, that’s accurate
+    - Couldn’t agree more
+    - Yes, I’m sure
+    - Positively
+    - 100 percent
+    - No question about it
+    - Absolutely, yes
+    - You got that right
+    - Indeed it is
+    - Yes, it’s right
+    - Exactly what I think
+    - Couldn’t agree more
+    - Yes, it’s true
+    - Yes, that’s true
+    - Right you are
+    - I’d say yes
+    - Yes, indeed
+    - Agreed, that’s true
+    - That’s the one
+    - Correct, exactly
+    - Yes, that’s fine
+    - Right, precisely
+    - Certainly, yes
+    - True, I agree
+    - Yeah, that’s it
+    - Right answer
+    - Yes, that’s good
+    - Fully agree
+    - Yes, indeed I do
+    - Yep, that’s accurate
+    - Yes, that’s great
+    - Completely correct
+    - Definitely, I agree
+    - Yes, I would say so
+    - Certainly, that’s it
+    - That’s what I thought
+    - Right, that’s the way
+    - I’d agree with that
+    - Yes, that sounds good
+    - Yes, that’s the one
+    - Absolutely, I concur
+    - Yes, I’m with you there
+    - Affirmative, that’s right
+    - Spot on, I agree
+    - Certainly, couldn’t be more right
+    - Exactly, that’s what I think
+
+- intent: deny
+  examples: |
+    - No, that’s not it
+    - I don’t think that’s correct
+    - No, not quite
+    - Not really, thanks
+    - Nope, that’s not what I need
+    - No, I’m okay
+    - That’s incorrect
+    - I’d say no
+    - No, that’s not what I meant
+    - No, I don’t think so
+    - I’d rather not
+    - Doesn’t seem right
+    - No, I don’t need that
+    - Nope, that’s wrong
+    - Not exactly what I wanted
+    - Not quite right
+    - No, not interested
+    - Not my thing
+    - No, thanks anyway
+    - That’s not what I was looking for
+    - I don’t need it
+    - That doesn’t seem correct
+    - No, that’s not it at all
+    - No, I don’t need help with that
+    - That’s off the mark
+    - No, that won’t do
+    - I don’t want that
+    - Not correct
+    - It’s a no from me
+    - I’m going to pass on that
+    - No, I’ll skip it
+    - I disagree with that
+    - Doesn’t work for me
+    - No, not that one
+    - That’s not quite right
+    - Nah, I’m good
+    - Nope, I’ll pass
+    - I don’t think that’s right
+    - No, that’s not what I meant to say
+    - No, I don’t want that
+    - It’s not correct
+    - Definitely not
+    - Doesn’t seem right to me
+    - Not what I wanted
+    - Nope, that’s off
+    - No, that’s not necessary
+    - I’m not interested in that
+    - I’ll pass on that
+    - Nope, that’s not it
+    - That’s not for me
+    - I’ll skip this one
+    - Doesn’t sound right
+    - No, I’d rather not
+    - No, I’ll do without it
+    - Doesn’t match what I need
+    - Not what I’m looking for
+    - I’ll decline
+    - I’m saying no
+    - Not really, not for me
+    - No, I don’t want it
+    - Not interested in that
+    - That’s a no
+    - I’ll go without it
+    - No, I’d rather pass
+    - Not what I meant
+    - Not what I’m after
+    - Not that, thanks
+    - No, I’ll find something else
+    - Doesn’t fit what I need
+    - No, I’ll get it myself
+    - Nope, that’s not what I need
+    - I’ll say no to that
+    - Doesn’t feel right
+    - No, I think I’ll pass
+    - Doesn’t suit my needs
+    - end
+    - exit
+
+- intent: out_of_scope
+  examples: |
+    - Can you sing?
+    - Do you believe in magic?
+    - What's the best car brand?
+    - Tell me a story
+    - What’s your favorite movie?
+    - Do you like pizza?
+    - Tell me a secret
+    - How far is the moon?
+    - Who is the richest person in the world?
+    - What’s the best way to cook pasta?
+    - Is time travel real?
+    - How old are you?
+    - Do you know any jokes?
+    - What’s 1+1?
+    - Who invented the internet?
+    - What’s the largest animal?
+    - Who won the last World Cup?
+    - Can you recommend a movie?
+    - Why is the sky blue?
+    - Tell me a riddle
+    - Do you believe in love?
+    - Can you dance?
+    - What’s the fastest car?
+    - How do I make pancakes?
+    - What's the biggest mountain?
+    - Do you have a pet?
+    - Who is your favorite superhero?
+    - Can you write poetry?
+    - What’s the speed of light?
+    - Tell me about dinosaurs
+    - How can I become a millionaire?
+    - What’s the hottest place on Earth?
+    - Who is the president?
+    - What’s the latest trend?
+    - Tell me a spooky story
+    - Why is water wet?
+    - Do you have any siblings?
+    - Tell me a tongue twister
+    - Do you have emotions?
+    - Can you make me laugh?
+    - What is your favorite song?
+    - What's 123 * 456?
+    - How do I become famous?
+    - What’s the tallest tree?
+    - Explain quantum physics to me
+    - How do I get over a breakup?
+    - Can you solve a Rubik's cube?
+    - Do you have hobbies?
+    - What's the meaning of art?
+    - asdasfeFG
+    - AAAAAAAAAAAA
+    - safgwe4tbnjj5357364582u
+    - 1234abcdEFGH
+    - qwertyuioplkjhgfdsa
+    - 999999999999999
+    - asdfghjklzxcvbnm
+    - gfhdsaxczvcxx
+    - jhgfdsasdfghj
+    - sdafghed43trtg
+    - 1234567890pplkjh
+    - mxnzbcvbghgfy
+    - 22234455ssaasd
+    - 9w8e7r6t5y4u3i2o
+    - 1234qwERtyZXcv
+    - 7766yy44tt11
+    - plmkoijnbhuyvgt
+    - 12asd3ASD4
+    - 000000000000
+    - w3w2q1q4e3w5
+    - saqwe32rty6u
+    - zzzzzzzzzzzzzz
+    - sdghfjdkfkeiiitjtj
+
+- intent: ask_new_releases
+  examples: |
+    - Any new arrivals?
+    - Show me recently added items
+    - Are there any new arrivals in stock?
+    - I’m looking for new products
+    - Anything newly launched?
+    - Do you have any fresh arrivals?
+    - Let me see the latest items
+    - Can you show me arriving products?
+    - What’s recently been added?
+    - Any new stuff in store?
+    - I want to browse new items
+    - Can I see recently launched products?
+    - Any new collections?
+    - Show me recently launched items
+    - What’s new on your shelves?
+    - Are there any new arrivals?
+    - Any new collections launched?
+    - Can I see the latest inventory?
+    - What’s the newest product in stock?
+    - Do you have fresh items in stock?
+    - Show me all arriving items
+    - What are the latest items added?
+    - Can I see products that just arrived?
+    - Anything new available?
+    - Do you have products just released?
+    - List your newest products
+    - Let me see what’s new
+    - Are there new additions?
+    - Can I browse newly arrived products?
+    - What’s new in your inventory?
+    - I want to see the newest items
+    - Any latest items for sale?
+    - Do you have newly added items?
+    - What’s in the new stock?
+    - Show me what’s newly available
+    - Can I see newly launched items?
+    - Are there any fresh products?
+    - I’d like to browse new products
+    - Show me your latest arrivals
+    - What are the recent additions?
+    - Any recently released items?
+    - Show me arriving items in store
+    - Is there anything new for sale?
+    - Are new items available?
+    - Any new releases this week?
+    - I’m interested in the latest items
+    - Show me the fresh arrivals
+    - Anything just launched?
+    - I want to see the latest releases
+    - Any new items added recently?
+    - Can I check recent arrivals?
+    - Are there any new products in stock?
+    - Show me the recent arrivals
+    - What’s newly available?
+    - I’d like to see the latest items
+    - Any newly launched collections?
+    - Can I view the newest items?
+    - Let me browse recent products
+    - Any new options in stock?
+    - I’d like to see what’s new
+    - Any newly arrived items?
+    - Do you have newly available products?
+    - Anything fresh on display?
+    - Can I check new arrivals in store?
+    - Any recent new launches?
+    - What’s been released lately?
+    - Can I browse the latest releases?
+    - Let me see what’s recently arrived
+    - Do you have recent product additions?
+    - Are there any new collections?
+    - Any recently stocked items?
+    - What new products have arrived?
+    - new release
+
+- intent: ask_payment_options
+  examples: |
+    - Do you offer payment options?
+    - How can I pay for my purchase?
+    - Do you have installment options?
+    - Can I use my debit card?
+    - What kind of payments do you take?
+    - Are there any financing options?
+    - Can I pay by cash?
+    - How do I complete the payment?
+    - Is a credit card acceptable?
+    - What payment choices do I have?
+    - Do you accept digital wallets?
+    - Which bank cards can I use?
+    - Can I pay via PayPal?
+    - Is there a way to pay in installments?
+    - Do you take mobile payments?
+    - What’s the payment process?
+    - Can I pay when it’s delivered?
+    - Do you support Apple Pay?
+    - Are credit card payments accepted?
+    - Can I pay using Google Pay?
+    - What methods of payment are available?
+    - Is online payment secure?
+    - Do you offer flexible payment plans?
+    - Can I pay using my card?
+    - Can I pay online?
+    - Do you allow payment by check?
+    - Is there a pay-later option?
+    - Do you accept Visa and Mastercard?
+    - Which payment methods work here?
+    - Can I split the payment?
+    - What are the terms for payment?
+    - Do you support American Express?
+    - Can I make a bank transfer?
+    - Is payment by cash allowed?
+    - Can I use contactless payment?
+    - Which banks are supported?
+    - Can I use my wallet balance?
+    - Do you allow payments through Stripe?
+    - Can I pay with a gift card?
+    - Are there monthly payment options?
+    - What’s the easiest way to pay?
+    - How does your payment system work?
+    - Do you have any secure payment methods?
+    - Can I use my PayPal balance?
+    - Is there a minimum amount for card payments?
+    - Can I pay by phone?
+    - Do you have flexible payment terms?
+    - Can I make partial payments?
+    - Do you have a COD option?
+    - What’s the payment method for orders?
+    - Can I set up recurring payments?
+    - Do you take international payments?
+    - Do you offer auto-pay?
+    - Can I pay with cryptocurrency?
+    - What’s required for online payment?
+    - Can I make a wire transfer?
+    - Do you offer discounts for certain payment methods?
+    - Is there a fee for card payments?
+    - How can I pay through my bank?
+    - Do you accept Discover cards?
+    - Can I change my payment method later?
+    - Do you have secure payment options?
+    - Are there payment options for larger purchases?
+    - Can I use multiple payment methods?
+    - Is there a charge for COD?
+    - Do you take payments via Zelle?
+    - Can I use a virtual card?
+    - Do you offer secure checkout options?
+    - Can I pay with my rewards points?
+    - Do you offer promotions on certain payment types?
+    - How do I pay at checkout?
+    - Is cash accepted for online orders?
+    - Do you have a cashless option?
+    - What’s the best way to pay?
+
+- intent: request_refund
+  examples: |
+    - I’d like my money back
+    - Can I return this for a refund?
+    - How do I go about getting a refund?
+    - Can I get my money back on this?
+    - I want a refund on this product
+    - Can you issue a refund?
+    - How do I apply for a refund?
+    - I’d like to request my money back
+    - Can I have a refund?
+    - What’s the refund process?
+    - I need to return my order
+    - Is there a way to get a refund?
+    - Can you help me process a refund?
+    - How do I initiate a return?
+    - I'd like to get my money back
+    - Can I receive a refund?
+    - I need help with a refund
+    - How do I file for a refund?
+    - Is it possible to refund my order?
+    - I want to return this item for a refund
+    - Can I start a refund request?
+    - Can you help me start a return?
+    - I need assistance with a refund
+    - How do I get a refund processed?
+    - Can I ask for a refund?
+    - I’d like to get a refund processed
+    - Help me get a refund
+    - How can I return this and get a refund?
+    - I'd like to return this item
+    - Can you tell me how to get a refund?
+    - How do I return this for a refund?
+    - I’m looking to get a refund
+    - Could you initiate a refund for me?
+    - I need to return this product
+    - What’s needed for a refund?
+    - Can you tell me the refund process?
+    - I would like to return it
+    - How do I apply for a return?
+    - Can I return this item?
+    - Is there a way to refund this?
+    - Can you provide a refund?
+    - I’d like to cancel and get my money back
+    - Help me with a return
+    - Can I send it back and get a refund?
+    - I need instructions for a refund
+    - Please help me get a refund
+    - Can I return it for a refund?
+    - Is a refund possible?
+    - Could I get a refund issued?
+    - I’d like to initiate a return
+    - How can I get reimbursed?
+    - Can I return my order for a refund?
+    - Can I get reimbursed?
+    - I’d like a return processed
+    - What’s required for a refund?
+    - I need to return an item
+    - How can I get my funds back?
+    - Do you process refunds?
+    - Please issue a refund
+    - Can I get a refund if I return this?
+    - Can you return my money?
+    - Is there a way to reverse this purchase?
+    - I’d like to get a refund started
+    - Can I cancel and get a refund?
+    - I’d like to send this back
+    - I need a reimbursement
+    - How can I get my purchase refunded?
+    - Could you handle a refund for me?
+    - I’m looking to return this
+    - How do I initiate a money-back request?
+    - Could I return it for my money back?
+    - I’d like a full refund
+    - How can I undo this purchase?
+    - request refund
+
+- intent: ask_discounts
+  examples: |
+    - Are there any discounts right now?
+    - Do you have any promotions?
+    - What discounts are available?
+    - Are there sales on specific items?
+    - Is there a seasonal discount?
+    - Can I get a discount on this item?
+    - Do you have any holiday discounts?
+    - Are there discounts for first-time customers?
+    - How can I get a discount code?
+    - Any deals on furniture?
+    - Are there any upcoming promotions?
+    - What’s the discount on this item?
+    - Can I get a coupon code?
+    - Do you offer bulk discounts?
+    - How much discount can I get?
+    - Are there weekend discounts?
+    - Do you offer student discounts?
+    - Is there a loyalty program?
+    - Can I use multiple discounts?
+    - Are there special offers this month?
+    - Do you have member discounts?
+    - Is there a discount on large orders?
+    - Any discount on new arrivals?
+    - How do I apply a promo code?
+    - Any discounts for frequent buyers?
+    - What promotions are going on now?
+    - Can I get a discount if I sign up?
+    - Are there any discounts on tables?
+    - Is there a furniture sale?
+    - Can I use a discount code online?
+    - Is there a military discount?
+    - Do you have any flash sales?
+    - Are promo codes available?
+    - Can I use more than one promo code?
+    - Are there bundle discounts?
+    - Is there a discount for teachers?
+    - Are there holiday sales coming up?
+    - Do you offer discounts on all products?
+    - Can I save money with your store card?
+    - Are there special deals today?
+    - How can I find your latest discounts?
+    - Do you offer discounts to new customers?
+    - Can I subscribe for discount updates?
+    - What’s the biggest discount available?
+    - Is there a discount for my birthday?
+    - Do you have a clearance section?
+    - Can I use a voucher code?
+    - Any limited-time offers?
+    - What are your special offers?
+    - Do you have rewards for loyal customers?
+    - Are there promo codes I can use?
+
+- intent: manage_account
+  examples: |
+    - How do I create an account?
+    - I want to register on your website
+    - Help me sign up
+    - How can I set up an account?
+    - How do I log into my account?
+    - I forgot my password
+    - How do I reset my password?
+    - Can you help me log in?
+    - I can’t access my account
+    - Where do I sign up?
+    - How can I delete my account?
+    - Is it possible to change my username?
+    - I want to update my account details
+    - How do I change my password?
+    - Can I link my account with social media?
+    - I want to log out of my account
+    - Where can I update my contact information?
+    - How do I add my address to my profile?
+    - Can I have multiple accounts?
+    - Is there an option to delete my account history?
+    - How do I view my order history?
+    - Can I add multiple addresses?
+    - How do I verify my account?
+    - I’m having trouble with two-step verification
+    - How do I secure my account?
+    - Can I edit my profile information?
+    - How do I enable notifications?
+    - Where do I find my account settings?
+    - I need help accessing my account
+    - How do I change my email?
+    - Can I merge two accounts?
+    - How do I update my payment info?
+    - I’d like to unsubscribe from emails
+    - How do I update my phone number?
+    - Can I recover my account?
+    - How can I make my account private?
+    - Can I switch to a premium account?
+    - Where do I check my account status?
+    - How do I find my account number?
+    - I want to download my account data
+    - How do I sign in with Google?
+    - I forgot my username
+    - Can you reset my password for me?
+    - Can I set up biometric login?
+    - Where do I view my saved items?
+    - I want to turn off notifications
+    - How can I update my profile picture?
+    - How do I get back into my account?
+    - Can I set a PIN for my account?
+    - I need help updating my preferences
+    - How do I close my account?
+
+- intent: ask_customer_service
+  examples: |
+    - How can I contact customer service?
+    - Do you have a support team?
+    - What are your customer service hours?
+    - Can I speak with a representative?
+    - How do I reach support?
+    - Do you have live chat?
+    - What’s the best way to contact you?
+    - Can I get assistance with my order?
+    - Is there a phone number for support?
+    - Can I email customer service?
+    - How soon can I expect a reply?
+    - Where can I find support on the website?
+    - What’s your return policy?
+    - How do I file a complaint?
+    - Is there a support hotline?
+    - Who do I contact for an urgent issue?
+    - Is customer service available on weekends?
+    - Can I leave feedback for your team?
+    - Where can I submit a review?
+    - Do you have an FAQ section?
+    - Can I track my complaint?
+    - Is there a help section?
+    - How do I cancel my support request?
+    - Do you have live support agents?
+    - Can I get in touch through social media?
+    - Can I talk to a real person?
+    - How long is your response time?
+    - What support channels are available?
+    - Do you offer support in different languages?
+    - How do I check the status of my query?
+    - Is there 24/7 customer service?
+    - Can I escalate my issue?
+    - Where can I find store policies?
+    - Do you have a feedback form?
+    - How do I get technical support?
+    - Who do I contact for a refund issue?
+    - How can I follow up on a support case?
+    - Do you offer phone support?
+    - Can I call for product inquiries?
+    - How do I get in touch quickly?
+    - Can I leave a message for support?
+    - Do you offer return labels?
+    - Where do I report an issue?
+    - Can I rate my support experience?
+    - Do you provide international support?
+    - Is there a chatbot for customer help?
+    - How do I get product support?
+    - Who do I contact for urgent matters?
+    - Do you accept returns?
+    - Can I ask for technical help?
+    - Where can I find your store policy?
+
+- intent: ask_miscellaneous
+  examples: |
+    - Do your products come with a warranty?
+    - What’s the warranty on furniture?
+    - Is there a guarantee on this item?
+    - Do you have assembly instructions?
+    - Can I get installation help?
+    - What’s the policy on damaged goods?
+    - Is there a warranty for this product?
+    - How long is the warranty period?
+    - Do you offer lifetime warranties?
+    - What does the warranty cover?
+    - How do I register my warranty?
+    - Can I get a repair under warranty?
+    - Who handles the warranty claims?
+    - What if my product arrives broken?
+    - How long is the coverage?
+    - Is installation service available?
+    - Can I extend my warranty?
+    - Do you have a repair service?
+    - How do I report a defect?
+    - What if my furniture breaks?
+    - Do you offer a product guarantee?
+    - What’s covered in your warranty?
+    - Is there support for installation?
+    - Do you provide replacement parts?
+    - How do I claim a warranty?
+    - Can I get a replacement for free?
+    - Does the warranty cover repairs?
+    - Can I purchase an extended warranty?
+    - Do you handle replacements?
+    - How can I track my warranty?
+    - Do you replace defective items?
+    - Is my product eligible for warranty?
+    - How do I install this product?
+    - Can I get help with assembly?
+    - What if the item is faulty?
+    - Do you offer setup assistance?
+    - What is the assembly fee?
+    - Is assembly included?
+    - How do I schedule an installation?
+    - How can I check warranty status?
+    - Is repair covered under warranty?
+    - Do you offer free repairs?
+    - Where can I find repair details?
+    - Can I claim a warranty online?
+    - How do I check my coverage?
+    - Do I pay for defective repairs?
+    - Is setup available?
+    - What if the item has a defect?
+    - How do I arrange for assembly?
+    - Does the warranty include repairs?
+    - How long is the product guarantee?
+    - Who should I contact for repairs?
+    - Can you help with furniture setup?
+    - Where can I find my warranty details?
+    - Do you offer setup assistance?
+    - How do I activate my warranty?
+    - What’s included in the product warranty?
+    - Does my warranty cover accidental damage?
+
+- intent: empty_message
+  examples: |
+    - ""
+    - " "
+    - "   "
+    - "      "
+    - "        "
+
+

@@ -1,0 +1,87 @@
+version: "3.1"
+
+stories:
+
+- story: user checks order status
+  steps:
+    - intent: ask_order_status
+    - action: utter_ask_order_id
+    - intent: provide_order_id
+    - slot_was_set:
+        - order_id: <user-provided order ID>
+    - action: action_check_order_status
+
+- story: user greets
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- story: user expresses thanks
+  steps:
+    - intent: thankyou
+    - action: utter_you_are_welcome 
+
+- story: ask if user has more questions
+  steps:
+    - action: utter_anything_else
+    - intent: affirm
+    - action: utter_ask_what_else
+
+- story: user says no more questions
+  steps:
+    - action: utter_anything_else
+    - intent: deny
+    - action: utter_goodbye
+
+- story: out_of_scope_response
+  steps:
+    - intent: out_of_scope
+    - action: utter_out_of_scope    
+
+- story: ask for new releases
+  steps:
+    - intent: ask_new_releases
+    - action: action_get_new_release_products
+
+- story: user asks for payment options
+  steps:
+    - intent: ask_payment_options
+    - action: utter_payment_info
+    - action: action_list_payment_options
+
+- story: user requests refund
+  steps:
+    - intent: request_refund
+    - action: utter_ask_refund_order_id
+    - intent: provide_order_id
+    - slot_was_set:
+        - order_id: <user-provided order ID>
+    - action: action_request_refund
+
+- story: handle ask_miscellaneous
+  steps:
+    - intent: ask_miscellaneous
+    - action: utter_development_response
+    - action: utter_anything_else
+
+- story: handle ask_customer_service
+  steps:
+    - intent: ask_customer_service
+    - action: utter_development_response
+    - action: utter_anything_else
+
+- story: handle manage_account
+  steps:
+    - intent: manage_account
+    - action: utter_development_response
+    - action: utter_anything_else
+
+- story: handle ask_discounts
+  steps:
+    - intent: ask_discounts
+    - action: utter_development_response
+    - action: utter_anything_else
+
+- story: handle empty message silently
+  steps:
+    - intent: empty_message      

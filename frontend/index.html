@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000" />
+    <meta name="description" content="Web site created using Locofy" />
+    <title>Furniro</title>
+
+    <style>
+      .css-jgse21, .large.css-qmypsf {
+        background-color: #b88e2f !important;
+      }
+      .css-1eegd2p {
+        background-color: #fff3e3 !important;
+      }
+      .css-8f4u10 {
+        color: black !important;
+      }
+      .css-1aibqey {
+        background-color: #b88e2f !important;
+        color: white !important;
+        border-color: #b88e2f !important;
+        margin-left: 31px !important;
+      }
+      .css-12e18r6{
+        margin-left: 31px !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <!-- Set the initial payload based on URL parameters -->
+    <div id="rasa-chat-widget" data-websocket-url="http://127.0.0.1:5005/"></div>
+    <script>
+      const username = new URLSearchParams(window.location.search).get("user") || "";
+      const initialMessage = username == "a" ? "Starting session by User A" : "Starting session by User B";
+      document.getElementById("rasa-chat-widget").setAttribute("data-initial-payload", initialMessage);
+    </script>
+
+    <script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script>
+    <script type="module" src="/src/index.tsx"></script>
+  </body>
+</html>

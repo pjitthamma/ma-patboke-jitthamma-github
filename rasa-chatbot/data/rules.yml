@@ -1,0 +1,23 @@
+version: "3.1"
+
+rules:
+  - rule: Ask for order ID when user asks for order status
+    steps:
+      - intent: ask_order_status
+      - action: utter_ask_order_id
+
+  - rule: Ask for refund order ID when user requests a refund
+    steps:
+      - intent: request_refund
+      - action: utter_ask_refund_order_id
+
+  - rule: Set session type and welcome User B
+    steps:
+      - intent: start_session_b
+      - action: action_set_session_user_type
+      - action: utter_welcome_message_b
+
+  - rule: Trigger Visual Guide
+    steps:
+      - intent: trigger_visual_guide
+      - action: action_trigger_ui_manipulation    

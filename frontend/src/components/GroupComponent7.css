@@ -1,0 +1,117 @@
+.content-background-icon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.checkout1 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 500;
+  font-family: inherit;
+  z-index: 1;
+}
+.meubel-house-logos-05-icon1 {
+  height: 139.4px;
+  width: 102.7px;
+  position: absolute;
+  margin: 0 !important;
+  top: -110.4px;
+  left: 104px;
+  object-fit: cover;
+  z-index: 2;
+}
+.hero-title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.home3 {
+  height: 43.4px;
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 64px;
+  z-index: 1;
+}
+.dashiconsarrow-down-alt2 {
+  height: 36.2px;
+  width: 26.7px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: contain;
+  z-index: 1;
+}
+.checkout2 {
+  height: 43.4px;
+  position: relative;
+  font-weight: 300;
+  display: inline-block;
+  min-width: 102.7px;
+  z-index: 1;
+}
+.breadcrumb-items,
+.breadcrumbs,
+.content-background-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.breadcrumb-items {
+  gap: var(--gap-sm-2);
+}
+.breadcrumbs,
+.content-background-parent {
+  padding: 0 var(--padding-23xl) 0 var(--padding-31xl);
+  font-size: var(--font-size-xl);
+}
+.content-background-parent {
+  align-self: stretch;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding-201xl-8) var(--padding-xl) var(--padding-180xl-6)
+    var(--padding-3xl);
+  position: relative;
+  gap: var(--gap-sm-2);
+  text-align: left;
+  font-size: var(--font-size-45xl);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 750px) {
+  .checkout1 {
+    font-size: var(--font-size-32xl);
+  }
+  .content-background-parent {
+    padding-top: var(--padding-125xl);
+    padding-bottom: var(--padding-111xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .checkout1 {
+    font-size: var(--font-size-19xl);
+  }
+  .checkout2,
+  .home3 {
+    font-size: var(--font-size-base);
+  }
+  .breadcrumbs {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

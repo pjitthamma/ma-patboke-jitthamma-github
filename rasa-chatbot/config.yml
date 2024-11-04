@@ -1,0 +1,28 @@
+recipe: "default.v1"
+assistant_id: "20241024-011856-witty-ray"
+language: "en"
+
+# Basic pipeline to handle text input
+pipeline:
+- name: WhitespaceTokenizer
+- name: LexicalSyntacticFeaturizer
+- name: CountVectorsFeaturizer
+- name: DIETClassifier
+  epochs: 100
+- name: FallbackClassifier
+  threshold: 0.5  # Set the threshold for confidence
+  ambiguity_threshold: 0.1  # This handles ambiguous inputs with similar intent confidences
+
+policies:
+- name: MemoizationPolicy
+- name: TEDPolicy
+  max_history: 5
+  epochs: 100
+- name: RulePolicy
+  core_fallback_threshold: 0.3
+  core_fallback_action_name: "action_default_fallback"
+  enable_fallback_prediction: True  # This ensures the fallback is triggered automatically when needed
+
+session_config:
+  session_expiration_time: 60  # session expires after 60 minutes of inactivity
+  carry_over_slots_to_new_session: true  # keep slots during the new session

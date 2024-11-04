@@ -1,0 +1,220 @@
+.header-child {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-oldlace);
+}
+.meubel-house-logos-05-icon {
+  align-self: stretch;
+  height: 32px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.logo-container {
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-8xs-5) 0 0;
+  box-sizing: border-box;
+}
+.skinclinic {
+  text-decoration: none;
+  position: relative;
+  font-weight: 700;
+  color: inherit;
+  margin-left: 10px;
+}
+.nav-links-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-8xs);
+}
+.mdiaccount-alert-outline-icon {
+  height: 38.6px;
+  width: 37.3px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 39px;
+}
+.nav-links-container-parent,
+.search-cart-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-41xl);
+  max-width: 100%;
+}
+.search-cart-icons {
+  margin-left: 20px; /* Add left margin to separate from nav-options */
+}
+.nav-links-container-parent {
+  width: 1683.8px;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  z-index: 1;
+}
+.about,
+.contact,
+.home1,
+.shop1 {
+  text-decoration: none;
+  position: relative;
+  font-weight: 500;
+  color: inherit;
+  display: inline-block;
+  min-width: 60px;
+}
+.about,
+.contact,
+.shop1 {
+  min-width: 52px;
+}
+.about,
+.contact {
+  min-width: 61px;
+}
+.contact {
+  min-width: 82px;
+}
+.home-parent {
+  margin: 0;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 80px;
+  white-space: nowrap;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+  cursor: pointer;
+}
+
+.group-div,
+.header,
+.nav-options {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.nav-options {
+  width: auto;
+  flex-direction: row;
+  padding: var(--padding-8xs-6) 0 0;
+  box-sizing: border-box;
+  margin-left: 30px;
+}
+.group-div,
+.header {
+  flex-direction: row;
+}
+.group-div {
+  width: 1683.8px;
+  z-index: 1;
+}
+.header {
+  align-self: stretch;
+  background-color: var(--color-oldlace);
+  padding: var(--padding-28xl-8) var(--padding-83xl) var(--padding-30xl-2);
+  box-sizing: border-box;
+  position: relative;
+  text-align: left;
+  font-size: var(--font-size-15xl);
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
+}
+@media screen and (max-width: 1250px) {
+  .header {
+    padding-left: var(--padding-32xl);
+    padding-right: var(--padding-32xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .nav-links-container-parent {
+    flex-wrap: wrap;
+  }
+  .header {
+    padding-left: var(--padding-6xl);
+    padding-right: var(--padding-6xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .search-cart-icons {
+    flex-wrap: wrap;
+    gap: var(--gap-11xl); /* Smaller gap on mobile */
+  }
+  .about,
+  .contact,
+  .home1,
+  .shop1 {
+    font-size: var(--font-size-base); /* Adjust font size for smaller screens */
+  }
+  .home-parent {
+    flex-wrap: wrap; /* Wrap items to the next line on small screens */
+  }
+}
+
+/* Container for Account Dropdown */
+.account-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Custom Dropdown menu container (Renamed to avoid Bootstrap conflict) */
+.custom-dropdown-menu {
+  position: absolute;
+  top: 50px; /* Position below the account icon */
+  right: 0; /* Align to the right side of the icon */
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 180px;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+/* Dropdown item */
+.custom-dropdown-item {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.custom-dropdown-item:hover {
+  background-color: var(--color-oldlace);
+  color: #000;
+}
+
+/* Account Icon Hover State */
+.mdiaccount-alert-outline-icon:hover {
+  cursor: pointer;
+}
+
+.custom-dropdown-divider {
+  border: none;
+  border-top: 3px solid #ccc; /* Light grey line */
+  margin: 10px 0; /* Space around the line */
+}

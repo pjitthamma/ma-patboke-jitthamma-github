@@ -1,0 +1,129 @@
+.hero-background-icon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.contact3 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 500;
+  font-family: inherit;
+  z-index: 1;
+}
+.meubel-house-logos-05-icon4 {
+  height: 139.4px;
+  width: 102.7px;
+  position: absolute;
+  margin: 0 !important;
+  top: -110px;
+  right: 78.3px;
+  object-fit: cover;
+  z-index: 2;
+}
+.title-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.home6 {
+  height: 43.4px;
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  flex-shrink: 0;
+  min-width: 64px;
+  z-index: 1;
+}
+.home-link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-3xs) 0 0;
+}
+.dashiconsarrow-down-alt23 {
+  height: 36.2px;
+  width: 26.7px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: contain;
+  z-index: 1;
+}
+.contact4 {
+  height: 43.4px;
+  position: relative;
+  font-weight: 300;
+  display: inline-block;
+  min-width: 86.7px;
+  z-index: 1;
+}
+.breadcrumb-items1 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.breadcrumb,
+.hero-background-parent {
+  display: flex;
+  justify-content: flex-start;
+}
+.breadcrumb {
+  width: 262px;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 var(--padding-6xs) 0 var(--padding-5xs);
+  box-sizing: border-box;
+  font-size: var(--font-size-xl);
+}
+.hero-background-parent {
+  align-self: stretch;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding-193xl) var(--padding-xl) var(--padding-189xl-6)
+    var(--padding-41xl);
+  position: relative;
+  gap: var(--gap-smi);
+  text-align: left;
+  font-size: var(--font-size-45xl);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 750px) {
+  .contact3 {
+    font-size: var(--font-size-32xl);
+  }
+  .hero-background-parent {
+    padding-top: var(--padding-119xl);
+    padding-bottom: var(--padding-117xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .contact3 {
+    font-size: var(--font-size-19xl);
+  }
+  .contact4,
+  .home6 {
+    font-size: var(--font-size-base);
+  }
+  .hero-background-parent {
+    padding-left: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

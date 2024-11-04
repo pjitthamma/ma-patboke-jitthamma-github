@@ -1,0 +1,38 @@
+.first-name {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 87px;
+  z-index: 1;
+}
+.first-name-input-box-child {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white1);
+  border: 1px solid var(--color-darkgray-100);
+  z-index: 1;
+}
+.first-name-input-box,
+.first-name-parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.first-name-input-box {
+  align-self: stretch;
+  flex: 1;
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-12xs);
+}
+.first-name-parent {
+  width: 212px;
+  height: 80px;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}

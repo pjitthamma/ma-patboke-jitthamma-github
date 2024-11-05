@@ -1,4 +1,4 @@
 cors: ["*"]
 
 action_endpoint:
-  url: "http://localhost:5055/webhook"
+  url: "https://ma-patboke-jitthamma-github.onrender.com/webhook"

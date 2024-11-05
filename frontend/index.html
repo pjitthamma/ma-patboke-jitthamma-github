@@ -34,7 +34,7 @@
     <div id="root"></div>
 
     <!-- Set the initial payload based on URL parameters -->
-    <div id="rasa-chat-widget" data-websocket-url="https://rasa-1zph.onrender.com/"></div>
+    <div id="rasa-chat-widget" data-websocket-url="wss://rasa-1zph.onrender.com/socket.io/"></div>
     <script>
       const username = new URLSearchParams(window.location.search).get("user") || "";
       const initialMessage = username == "a" ? "Starting session by User A" : "Starting session by User B";

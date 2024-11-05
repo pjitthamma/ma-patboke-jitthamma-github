@@ -22,7 +22,6 @@ yarn-error.log*
 
 # Ignore Rasa cache, models, and logs
 .rasa/
-models/
 __pycache__/
 rasa-chatbot/actions/__pycache__/
 logs/
